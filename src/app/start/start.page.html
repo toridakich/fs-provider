@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref="home"></ion-back-button>
+        </ion-buttons>
+    <ion-title>start</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h2> Existing rentals </h2><br>
+  <p class = "existingRentals">
+    no existing rentals
+  </p>
+    <ion-button (click)="navToCreate()">Create new</ion-button>
+    <ion-button (click)="navToUpdate()">Update rental</ion-button>
+    <ion-button (click)="navToView()">View details</ion-button>
+
+</ion-content>

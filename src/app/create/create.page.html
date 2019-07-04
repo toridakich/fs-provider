@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>create</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <input type="text" placeholder="Type of place" name="type" required><br>
+    <input type="text" placeholder="Number of guests" name="guests" required><br>
+    <input type="text" placeholder="Location (city)" name="loc" required>
+    <p class="guestSpaceQ">
+      Is this a dedicated guest space?
+    </p>
+    <input type="radio" name="Yes" value="Yes"><b>Yes, it's primarily set up for guests.</b> <br>
+    <input type="radio" name="No" value="No"><b>No, I keep my personal belongings here.</b> <br>
+    <p class="guestSpaceQ">
+      Are you listing as part of a company?
+    </p>
+    <input type="radio" name= "Yes" value= "Yes"> <b>Yes.</b><br>
+    <input type ="radio" name= "No" value = "No"><b>No.</b><br>
+    <input type="text" placeholder="Number of bedrooms" name="bedrooms" required><br>
+    <input type="text" placeholder="Number of beds" name="beds" required><br>
+    <input type="text" placeholder="Number of bathrooms" name="bathrooms" required><br>
+    <p class="guestSpaceQ">
+        Are the bathrooms private?
+      </p>
+      <input type="radio" name= "Yes" value= "Yes"> <b>Yes.</b><br>
+      <input type ="radio" name= "No" value = "No"><b>No.</b><br>
+      <p class="guestSpaceQ">
+          What's the address?
+        </p>
+        <input type="text" placeholder="Country/region" name="country" required><br>
+        <input type="text" placeholder="Street address" name="address" required><br>
+        <input type="text" placeholder="Apt, suite (opt.)" name="apt" optional><br>
+        <input type="text" placeholder="City" name="city" required><br>
+        <input type="text" placeholder="State" name="state" required><br>
+        <input type="text" placeholder="Zipcode" name="zip" required><br>
+        <ion-button (click)="navToStart()">Post rental</ion-button>
+</ion-content>

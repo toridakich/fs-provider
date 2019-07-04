@@ -1,14 +1,32 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      Login
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+  <form class = "box">
+    
+  
+    <h2> Username </h2> 
+      
+      <input type="text" placeholder="Enter Username" name="uname" required><br>
+    <h2> Password </h2>
+      
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      
+        <input type="checkbox" checked="checked" name="remember"> Remember me <br>
+      
+      <ion-button (click)="navToStart()">Login</ion-button>
+      
+  
+    <div class="container" style="background-color: white">
+      
+      <span class="psw">Forgot <a href="#">password?</a></span>
+      <ion-button (click)="navToRegistration()">Register</ion-button>
+      
+    </div>
+  </form>
 </ion-content>
